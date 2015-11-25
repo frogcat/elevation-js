@@ -1,7 +1,7 @@
 # elevation-js
-A client javascript port of gsi-cyberjapan/elevation-php
+A client javascript port of [gsi-cyberjapan/elevation-php](https://github.com/gsi-cyberjapan/elevation-php)
 
-## Usage
+## Example
 
     <!DOCTYPE html>
     <html>
@@ -11,13 +11,31 @@ A client javascript port of gsi-cyberjapan/elevation-php
     <script src="getelevation.js"></script>
     </head>
     <body>
-    	<script>
+      <script>
         getelevation(142.558594, 43.153102, function(json) {
           console.log(json);
         });
       </script>
     </body>
     </html>
+
+## Syntax
+
+    getelevation(longitude,latitude,callback)
+
+#### longitude
+経度
+
+#### latitude
+緯度
+
+#### callback
+標高の取得後に実行されるコールバック関数。
+コールバック関数の第一引数に以下のようなオブジェクトが渡される。
+詳細は <http://maps.gsi.go.jp/development/api.html> を参照。
+
+    { elevation : 120, hsrc : "10m" }
+
 
 ## Note
 
