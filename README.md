@@ -1,6 +1,10 @@
 # elevation-js
 A client javascript port of [gsi-cyberjapan/elevation-php](https://github.com/gsi-cyberjapan/elevation-php)
 
+## Demo
+
+<http://frogcat.github.io/elevation-js/>
+
 ## Example
 
     <!DOCTYPE html>
